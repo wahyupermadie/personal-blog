@@ -8,6 +8,8 @@ import { SocialLink } from '../../styles/shared';
 import config from '../../website-config';
 import Facebook from '../icons/facebook';
 import Twitter from '../icons/twitter';
+import Linkedin from '../icons/linkedin';
+import Github from '../icons/github';
 import SubscribeModal from '../subscribe/SubscribeOverlay';
 import SiteNavLogo from './SiteNavLogo';
 
@@ -146,6 +148,28 @@ class SiteNav extends React.Component<SiteNavProps> {
         </SiteNavLeft>
         <SiteNavRight>
           <SocialLinks>
+            {config.linkedin && (
+              <a
+                css={SocialLink}
+                href={config.linkedin}
+                target="_blank"
+                title="LinkedIn"
+                rel="noopener noreferrer"
+              >
+                <Linkedin />
+              </a>
+            )}
+            {config.facebook && (
+              <a
+                css={SocialLink}
+                href={config.github}
+                target="_blank"
+                title="Github"
+                rel="noopener noreferrer"
+              >
+                <Github />
+              </a>
+            )}
             {config.facebook && (
               <a
                 css={SocialLink}
@@ -169,10 +193,6 @@ class SiteNav extends React.Component<SiteNavProps> {
               </a>
             )}
           </SocialLinks>
-          {config.showSubscribe && (
-            <SubscribeButton onClick={this.openModal}>Subscribe</SubscribeButton>
-          )}
-          {config.showSubscribe && <SubscribeModal ref={this.subscribe} />}
         </SiteNavRight>
       </nav>
     );
