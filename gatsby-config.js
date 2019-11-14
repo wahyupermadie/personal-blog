@@ -10,8 +10,10 @@ module.exports = {
     'MarkdownRemark.frontmatter.author': 'AuthorYaml',
   },
   plugins: [
-    'gatsby-plugin-sitemap',
+    'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    'gatsby-transformer-remark',
+    'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -47,7 +49,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://gatsby-casper.netlify.com',
+        siteUrl: 'https://wahyupermadi.id',
       },
     },
     'gatsby-plugin-emotion',

@@ -1,9 +1,10 @@
 const path = require('path');
 const _ = require('lodash');
+const {fmImagesToRelative} = require('gatsby-remark-relative-images')
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
-
+  fmImagesToRelative(node);
   // Sometimes, optional fields tend to get not picked up by the GraphQL
   // interpreter if not a single content uses it. Therefore, we're putting them
   // through `createNodeField` so that the fields still exist and GraphQL won't
