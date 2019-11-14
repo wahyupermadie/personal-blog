@@ -156,8 +156,7 @@ implementation 'com.google.dagger:dagger-android-support:2.x'
 annotationProcessor 'com.google.dagger:dagger-android-processor:2.x'
 ```
 
-Untuk implementasi sederhana Dagger 2 dengan Kotlin, dapat dilihat pada Repo berikut, pada branch master menggunakan MVP dan pada branch MVVM menggunakan MVVM pattern. Thank you
-[GithubRepository](https://github.com/wahyupermadie/try-dagger)
+Untuk implementasi sederhana Dagger 2 dengan Kotlin, dapat dilihat pada [Github Repository](https://github.com/wahyupermadie/try-dagger) berikut, pada branch master menggunakan MVP dan pada branch MVVM menggunakan MVVM pattern. Thank you
 
 #### References:
 [Dagger](https://dagger.dev/)
