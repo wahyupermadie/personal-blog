@@ -57,7 +57,7 @@ export interface WebsiteConfig {
 }
 
 const config: WebsiteConfig = {
-  title: 'WePe',
+  title: 'Wahyu Permadi',
   description: 'Wahyu Permadi',
   coverImage: 'img/blog-cover.jpg',
   logo: 'img/author.png',
