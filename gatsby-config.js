@@ -52,6 +52,18 @@ module.exports = {
         siteUrl: 'https://wahyupermadi.id',
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Wahyu Permadi`,
+        short_name: `Wahyu Permadi`,
+        start_url: `/`,
+        background_color: `#f4f8fb`,
+        theme_color: `#15171A`,
+        display: `standalone`,
+        icon: `src/static/author.png`,
+      },
+    },
     'gatsby-plugin-emotion',
     'gatsby-plugin-typescript',
     'gatsby-transformer-sharp',
