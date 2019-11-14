@@ -1,3 +1,7 @@
 - id: speeches
   description: Some of the greatest words ever spoken.
   image: img/speeches-cover.jpg
+- id: depencey-injection
+  description: Some of the greatest words ever spoken.
+  image: img/depedency-injection-android.jpg
+  
