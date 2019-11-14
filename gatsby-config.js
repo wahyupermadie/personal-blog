@@ -3,8 +3,8 @@ const path = require('path');
 module.exports = {
   siteMetadata: {
     title: 'Wahyu Permadi',
-    description: 'WePe Personal',
-    siteUrl: 'https://gatsby-casper.netlify.com', // full path to blog - no ending slash
+    description: 'Wahyu Permadi Personal Blog',
+    siteUrl: 'https://wahyupermadi.id', // full path to blog - no ending slash
   },
   mapping: {
     'MarkdownRemark.frontmatter.author': 'AuthorYaml',
