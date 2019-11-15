@@ -13,26 +13,25 @@ Hallo temen-temen, kali ini gw membahas tentang Dagger2 + Kotlin. Sebelumnya uda
 
 > DI (<i>Depedency Injection</i>) merupakan sebuah proses untuk memasukan (<i>inject</i>) sebuah <i>object</i> kedalam <i>class</i> lain yang membutuhkannya.
 
-Sebagai contoh lain ada sebuah class Car yang tersusun dari class Pertamax, dan class Wheel.
+Sebagai contoh lain ada sebuah class Car yang tersusun dari class Fuel, dan class Wheel.
 
 ```css
 class Car{
     private lateinit var wheel : Wheel
-    private lateinit var pertamax : Pertamax
-    
-    constructor(wheel: Wheel, pertamax: Pertamax){
+    private lateinit var fuel : Fuel
+constructor(wheel: Wheel, fuel: Fuel){
         this.wheel = wheel
-        this.pertamax = pertamax
+        this.fuel = fuel
     }
-    fun getWheel(){
+fun getWheel(){
         println("Jumlah Roda "+wheel.wheels())
     }
     
-    fun getPertamaxName(){
-        println(pertamax.getName())
+    fun getFuel(){
+        println(fuel.getName())
     }
-    fun getPertamaxPrice(){
-        println(pertamax.getPrice())
+    fun getFuelPrice(){
+        println(fuel.getPrice())
     }
 }
 class Wheel{
@@ -40,7 +39,7 @@ class Wheel{
         return "4 Wheels"
     }
 }
-class Pertamax(){
+class Fuel(){
     fun getName() : String {
         return "Pertamax"
     }
@@ -52,11 +51,11 @@ class Pertamax(){
 fun main(){
     var car = Car(Wheel(), Pertamax())
     car.getWheel()
-    car.getPertamaxName()
-    car.getPertamaxPrice()
+    car.getFuel()
+    car.getFuelPrice()
 }
 ```
-Dari kode diatas dapat dilihat bahwa ketika kita ingin membuat <i>object</i> dari class Car, kita perlu membuat object class Wheel dan object class Pertamax juga. Coba bayangkan saja jika class Car digunakan di banyak <i>Activity</i> maupun <i>Fragment</i>, berapa kali kalian akan membuat instance object yang sama ? tentunya banyak bukan. Nah karena itulah DI itu ada.
+Dari kode diatas dapat dilihat bahwa ketika kita ingin membuat <i>object</i> dari class Car, kita perlu membuat object class Wheel dan object class Fuel juga. Coba bayangkan saja jika class Car digunakan di banyak <i>Activity</i> maupun <i>Fragment</i>, berapa kali kalian akan membuat instance object yang sama ? tentunya banyak bukan. Nah karena itulah DI itu ada.
 
 ---
 
