@@ -60,7 +60,8 @@
     "react-dom": "16.8.6",
     "react-emotion": "10.0.0",
     "react-helmet": "5.2.1",
-    "rehype-react": "4.0.1"
+    "rehype-react": "4.0.1",
+    "remark-grid-tables": "^1.7.1"
   },
   "devDependencies": {
     "@types/classnames": "2.2.9",

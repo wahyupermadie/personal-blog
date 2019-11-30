@@ -5,7 +5,7 @@ image: img/dagger.png
 description: Bagaimana cara menggunakan Dagger2 sebagai dependency injection di Android Project
 author: Wahyu Permadi
 date: 2019-11-13T07:03:47.149Z
-tags: [dependency-injection]
+tags: [ENGINEERING]
 draft: false
 ---
 
